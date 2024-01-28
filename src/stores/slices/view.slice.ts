@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export interface ViewState {
   isLoading: boolean;
@@ -9,7 +9,7 @@ const initialState: ViewState = {
 };
 
 export const viewSlice = createSlice({
-  name: "view",
+  name: 'view',
   initialState,
   reducers: {
     showLoading: (state) => {
