@@ -25,6 +25,8 @@
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
+    "eslint-plugin-import/no-cycle": "off",
+    "import/no-cycle": "off",
     "react/prop-types": 0,
     "no-empty-function": "off",
     "react/react-in-jsx-scope": "off",
@@ -32,6 +34,7 @@
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/no-explicit-any": ["off"],
     "no-unused-vars": "off",
+    "no-param-reassign": ["error", { "props": false }],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -47,7 +50,8 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "singleQuote": "true"
       }
     ]
   },
