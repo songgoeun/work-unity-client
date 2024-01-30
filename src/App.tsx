@@ -1,12 +1,17 @@
 import { ThemeProvider } from 'styled-components';
-// import { RouterProvider } from 'react-router-dom';
+// import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 import theme from './theme';
 // antd - theme?
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      {/* <RouterProvider router={router} /> */}
+      {/* <Loading isLoading={loading} /> */}
+      <Outlet />
+      {/* <Suspense fallback={<div>test</div>}>
+        
+      </Suspense> */}
     </ThemeProvider>
   );
 }
