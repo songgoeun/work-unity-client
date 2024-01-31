@@ -1,8 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 // import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import theme from './theme';
-// antd - theme?
+import { theme } from './theme';
 
 function App() {
   return (

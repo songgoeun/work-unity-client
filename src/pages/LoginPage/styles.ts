@@ -7,3 +7,11 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const LoginTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+`;

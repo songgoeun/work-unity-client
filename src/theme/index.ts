@@ -1,7 +1,7 @@
 import color from './color';
 
-const theme = {
+export const theme = {
   color,
 };
 
-export default theme;
+export * from './typography';
