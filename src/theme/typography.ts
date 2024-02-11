@@ -6,18 +6,22 @@ export interface TypoProps {
 
 export const PretendardBold = styled.div<TypoProps>`
   font-family: 'Pretendard-Bold';
+  color: ${({ color }) => color ?? '#21259'};
 `;
 
 export const PretendardSemiBold = styled.div<TypoProps>`
   font-family: 'Pretendard-SemiBold';
+  color: ${({ color }) => color ?? '#21259'};
 `;
 
 export const PretendardMedium = styled.div<TypoProps>`
   font-family: 'Pretendard-Medium';
+  color: ${({ color }) => color ?? '#21259'};
 `;
 
 export const PretendardRegular = styled.div<TypoProps>`
   font-family: 'Pretendard';
+  color: ${({ color }) => color ?? '#21259'};
 `;
 
 export const Display = styled(PretendardBold)`
