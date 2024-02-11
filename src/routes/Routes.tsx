@@ -2,8 +2,10 @@ import { lazy } from 'react';
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 
+const WithBaseComponent = lazy(() => import('@/hoc/WithBaseComponent/WithBaseComponent'));
 const LoginPage = lazy(() => import('@/pages/LoginPage/LoginPage'));
 const PrivateRoute = lazy(() => import('@/routes/PrivateRoute'));
+const WorkPage = lazy(() => import('@/pages/WorkPage/WorkPage'));
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,11 @@ const router = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <Navigate to="home" />,
+            element: <Navigate to="work" />,
+          },
+          {
+            path: '/work',
+            element: <WithBaseComponent components={<WorkPage />} />,
           },
         ],
       },

@@ -1,1 +1,1 @@
-export * from './WithAuthorization';
+export * from './WithBaseComponent';

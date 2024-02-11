@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 const PrivateRoute: React.FC = () => {
   //   const { isError, isLoading } = useUserQuery();
@@ -8,8 +8,8 @@ const PrivateRoute: React.FC = () => {
   //   if (isError || !token) {
   //     return <Navigate to="/login" replace />;
   //   }
-
-  return <Navigate to="/login" replace />;
+  return <Outlet />;
+  // return <Navigate to="work" replace />;
   // //return !isLoading && <Outlet />;
 };
 
